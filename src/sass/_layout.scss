@@ -1,0 +1,693 @@
+@import 'mixins';
+
+.bg {
+    background-color: $sufarce_color;
+    padding: 40px 83px 91px;
+
+    @include xs {
+        padding: 5px;
+    }
+
+    @include sm {
+        padding:5px;
+    }
+
+    @include md {
+        padding: 40px 83px 91px;
+    }
+
+    @include lg {
+        padding: 40px 83px 91px;
+    }
+
+    @include xl {
+        padding: 40px 83px 91px;
+    }
+
+    &__degree-finder{
+        margin-bottom: 12px;
+        position: relative;
+        text-align: center;
+    }
+
+    &__degree-finder::after {
+        background-color: $border-bottom;
+        bottom: -12px;
+        content: "";
+        height: 2px;
+        margin: 0 -150px;
+        position: absolute;
+        width: 60px;
+    }
+
+    &__span {
+        align-items: center;
+        color: $span-color;
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 1.44;
+        margin-top: 29px;
+    }
+
+    &__i-am-looking-for {
+        color: $sub-heading;
+        font-family: SourceSerifPro;
+        font-size: 21px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        height: 20px;
+        letter-spacing: normal;
+        line-height: 1.24;
+        margin: 25px 76px 16px 0;
+        position: relative;
+        text-align: left;
+        width: 168px;
+    }
+
+    &__i-am-looking-for::after {
+        background-color: $border-bottom;
+        bottom: -12px;
+        content: "";
+        height: 2px;
+        left: 0;
+        position: absolute;
+        width: 60px;
+    }
+
+    &__grid {
+        border-bottom: $horizontal-border solid 1px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        justify-items: center;
+        margin-bottom: 29px;
+        margin-top: 50px;
+        padding-bottom: 30px;
+
+        @include xs {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        @include sm {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        @include md {
+            display: flex;
+            flex-direction: row;
+        }
+    
+        @include lg {
+            display: flex;
+            flex-direction: row;
+        }
+    
+        @include xl {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    &__btn {
+        border-radius: 4px;
+        box-shadow: 0px 1px 4px 0 rgba(80, 80, 80, 0.15);
+        background-color: $button-background;
+        border-color: none;
+        border: none;
+        color: $button-color;
+        height: 44px;
+        width: 224px;
+
+        @include xs {
+            margin-bottom: 5px;
+            width: auto;
+        }
+    
+        @include sm {
+            margin-bottom: 5px;
+            width: auto;
+        }
+    
+        @include md {
+            width: 224px;
+        }
+    
+        @include lg {
+            width: 224px;
+        }
+    
+        @include xl {
+            width: 224px;
+        }
+        
+        &--active {
+            background-color: $button-color;
+            color: $button-background;
+        }
+    }
+
+    &__btn-lg {
+        align-items: center;
+        border-radius: 4px;
+        box-shadow: 0px 1px 4px 0 rgba(80, 80, 80, 0.15);
+        background-color: $button-background;
+        border-color: none;
+        color: $button-color;
+        border: none;
+        display: inline-flex;
+        height: 78px;
+        justify-content: space-between;
+        padding: 15px 24px 12px 15px;
+        width: 224px;
+
+        @include xs {
+            width: auto;
+
+        }
+    
+        @include sm {
+            width: auto;
+
+        }
+    
+        @include md {
+            width: 224px;
+        }
+    
+        @include lg {
+            width: 224px;
+        }
+    
+        @include xl {
+            width: 224px;
+        }
+
+
+        &--active {
+            background-color: $button-color;
+            color: $button-background;
+        }
+    }
+
+    &__grid02 {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(5,224px);
+        justify-content: space-between;
+        margin-top: 50px;
+
+        @include xs {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 50px;
+
+        }
+        @include sm {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+        @include md {
+            display: grid;
+            grid-template-columns: repeat(2,224px);
+            justify-content: space-between;
+            grid-gap: 20px;
+            margin-top: 50px;
+        }
+        @include lg {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(5,224px);
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+        @include xl {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(5,224px);
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+    }
+  
+}
+
+.content {
+    background: $surface-color-lite;
+    padding: 40px 83px 91px;
+
+    @include xs {
+        padding: 5px;
+    }
+
+    @include sm {
+        padding: 5px;
+    }
+
+    @include md {
+        padding: 40px 83px 91px;
+    }
+
+    @include lg {
+        padding: 40px 83px 91px;
+    }
+
+    @include xl {
+        padding: 40px 83px 91px;
+    }
+    
+
+    &__card-wrapper {
+        border-bottom: $horizontal-border solid 1px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        @include xs {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        @include sm {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        @include md {
+            display: flex;
+            flex-direction: row;
+        }
+    
+        @include lg {
+            display: flex;
+            flex-direction: row;
+        }
+    
+        @include xl {
+            display: flex;
+            flex-direction: row;
+        }
+
+    }
+    
+    &__card {
+        background-color: $card-background;
+        border-radius: 4px;
+        box-shadow: 0px 7px 17px 0 rgba(80, 80, 80, 0.15);
+        color: $card-heading;
+        height: 111px;
+        margin: 15px 0 40px;
+        padding: 19px 21px 20px 19px;
+        width: 384px;
+        
+        @include xs {
+            width: auto;
+
+        }
+    
+        @include sm {
+            width: auto;
+        }
+    
+        @include md {
+            height: 111px;
+            width: 384px;
+        }
+    
+        @include lg {
+            height: 111px;
+            width: 384px;
+        }
+    
+        @include xl {
+            height: 111px;
+            width: 384px;
+        }
+
+        &--active {
+            background-color: $card-active-bg;
+            color: $card-active;
+        }
+    }
+    &__recently-viewed {
+        color: $card-heading;
+        font-family: GillSans;
+        font-size: 19px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        height: 18px;
+        line-height: 1.16;
+        letter-spacing: normal;
+        margin: 0 285px 15px 0;       
+        text-align: left;
+        width: 123px;
+      }
+
+      &__programs-found {
+        color: $program-heading;
+        display: block;
+        font-family: GillSans;
+        font-size: 19px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.89;
+        letter-spacing: normal;
+        margin: 30px 30px 30px 0;
+      }
+}
+
+.accordion {
+    border-top: $horizontal-border solid 1px;
+    max-width: 100%;
+    padding: 40px 0;
+
+    &__accordion-title  {
+        align-items: center;
+        background-color: $surface-color-lite;
+        box-shadow: 0px 1px 4px 0 rgba(80, 80, 80, 0.15);
+        border-radius: 4px;
+        color: $program-heading;
+        cursor: pointer;
+        display: flex;
+        font-size: 28px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        margin-top: 0.5rem;
+        padding: 30px 30px 30px 78px;
+        position: relative;
+        transition: 0.5s;
+        text-align: left;
+
+        @include xs {
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+            text-align: center;
+        }
+    
+        @include sm {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+        }
+    
+        @include md {
+            display: flex;
+            flex-direction: row;
+            padding: 30px 30px 30px 78px;
+            text-align: center;  
+        }
+    
+        @include lg {
+            display: flex;
+            flex-direction: row;
+            padding: 30px 30px 30px 78px;
+            text-align: center;
+        }
+    
+        @include xl {
+            display: flex;
+            flex-direction: row;
+            padding: 30px 30px 30px 78px;
+            text-align: center;
+        }
+    }
+
+    &__accordion-title:hover {
+        background-color: $sufarce_color
+    }
+
+    &__accordion-title:after {
+        color: $button-color;
+        content: ">";
+        left: 1rem;
+        position: absolute;
+        transition: transform 0.5s ease-in;
+
+        @include xs {
+            color: $button-color;
+            content: "";
+            left: 1rem;
+            position: absolute;
+            transition: transform 0.5s ease-in;
+        }
+    
+        @include sm {
+            color: $button-color;
+            content: ">";
+            left: 1rem;
+            position: absolute;
+            transition: transform 0.5s ease-in;
+        }
+    
+        @include md {
+            color: $button-color;
+            content: ">";
+            left: 1rem;
+            position: absolute;
+            transition: transform 0.5s ease-in;
+        }
+    
+        @include lg {
+            color: $button-color;
+            content: ">";
+            left: 1rem;
+            position: absolute;
+            transition: transform 0.5s ease-in;
+        }
+    
+        @include xl {
+            color: $button-color;
+            content: ">";
+            left: 1rem;
+            position: absolute;
+            transition: transform 0.5s ease-in;
+        }
+      }
+    
+    &__accordion-content {
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        overflow-y: hidden;
+        position: relative;
+        transition: all 0.5s ease-in;
+
+    }
+
+    &__accordion-paragraph {
+        border-bottom: $horizontal-border solid 1px;
+        color: $span-color;
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        height: 44px;
+        line-height: 1.44;
+        letter-spacing: normal;
+        margin: 0;
+        padding-bottom: 15px;
+        text-align: left;
+        width: 828px;        
+    }
+
+    &__footer {
+        margin-top: 20px;
+    }
+
+    &__course-length {
+        color: $card-date;
+        font-family: GillSans;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.86;
+        letter-spacing: normal;
+        text-align: left;
+    }
+
+    &__weeks {
+        color: $card-week;
+        font-family: GillSans;
+        font-stretch: normal;
+        font-style: normal;
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 1.44;
+        letter-spacing: normal;
+        margin-left: 10px;
+        margin-right: 60px;
+        text-align: left;
+    }
+    
+
+    &__next-start-date {
+        color: $card-date;
+        font-family: GillSans;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.86;
+        letter-spacing: normal;
+        text-align: left;
+    }
+
+    &__date {
+        color: $card-date;
+        font-family: GillSans;
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.44;
+        letter-spacing: normal;
+        margin-left: 10px;
+        text-align: left;
+    }
+
+    .accordion__accordion-item.active .accordion__accordion-title:after {
+        transform: rotate(270deg);
+    }
+
+    .accordion__accordion-item.active .accordion__accordion-content {
+        background: $surface-color-lite;
+        color: $span-color;
+        height: 100px;
+        margin-bottom: 1rem;
+        opacity: 1;
+        padding: 15px 0 30px 78px;
+        transition: all 0.5s ease-in;
+    }
+
+    &__button {
+        background: #ed9a2d;
+        border: none;
+        border-radius: 4px;
+        color: $button-background;
+        height: 30px;
+        left: 78px;
+        margin-right: 19px;
+        width: 102px;
+    }
+
+    &__btn {
+        border-radius: 22px;
+        border: $button-border solid 2px;
+        background-color: $button-background;
+        color: $button-color;
+        height: 44px;
+        margin-left: auto;
+        text-transform:uppercase;
+        width: 175px;
+
+        @include xs {
+            margin-left:unset;
+        }
+    
+        @include sm {
+            margin-left: auto;
+        }
+    
+        @include md {
+            margin-left: auto;
+        }
+    
+        @include lg {
+            margin-left: auto;
+        }
+    
+        @include xl {
+            margin-left: auto;
+        }
+    }
+
+}
+
+/* Pagination links */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+    &__a {
+        border-radius: 50%;
+        border: $pagination-color solid 2px;
+        color: $pagination-color;
+        height: 20px;
+        margin: 10px;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color .3s;
+        width: 10px;
+
+        &--active {
+            color: $pagination-text;
+            background-color: $pagination-color;
+        }
+
+        &--deactive {
+            color: $pagination-deactive;
+            background-color: $surface-color-lite;
+            border: $pagination-deactive solid 2px;
+        }
+    
+        &--none {
+            color: $button-color-dark;
+            border: $surface-color-lite solid 2px;
+            background-color: $surface-color-lite;
+            margin: 10px 0;
+        }
+
+        @include xs {
+            height: 20px;
+            margin: 5px;
+            padding: 10px;
+        }
+
+        @include sm {
+            height: 20px;
+            margin: 5px;
+            padding: 10px;
+        }
+
+        @include md {
+            height: 20px;
+            margin: 10px;
+            padding: 8px 16px;
+        }
+
+        @include lg {
+            height: 20px;
+            margin: 10px;
+            padding: 8px 16px;
+        }
+
+        @include xl {
+            height: 20px;
+            margin: 10px;
+            padding: 8px 16px;
+        }
+    }
+
+  }
+  
+//   /* Add a grey background color on mouse-over */
+//   .pagination a:hover:not(.active) {background-color: $surface-color-lite;}
+
+

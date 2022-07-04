@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codehouse</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="bg">
+        <h1 class="bg__degree-finder">
+            Degree Finder
+        </h1>
+        <h6 class="bg__span">
+            Walden University provides hundreds of degrees, find yours by selecting...
+        </h6>
+        <div>
+            <span class="bg__i-am-looking-for">
+                I am looking for...
+            </span>
+            <div class="bg__grid">
+                <button class="bg__btn bg__btn--active">All Areas of Study</button>
+                <button class="bg__btn">Doctoral</button>
+                <button class="bg__btn">Masters</button>
+                <button class="bg__btn">Bachelors</button>
+                <select class="bg__btn">
+                    <option value="xxx">Other Degrees</option>
+                </select>
+            </div>
+            <span class="bg__i-am-looking-for">
+                I am interested in...
+            </span>
+            <div class="bg__grid02">
+                <button class="bg__btn-lg bg__btn-lg--active"><span><i class="fa-solid fa-graduation-cap fa-2xl"></i></span>All Areas of Study</button>
+                <button class="bg__btn-lg"><span><i class="fa-solid fa-handshake fa-2xl"></i></span><span>Business, Management and Communication</span></button>
+                <button class="bg__btn-lg"><i class="fa-solid fa-scale-balanced fa-2xl"></i>Criminal Justice and emergency management</button>
+                <button class="bg__btn-lg"><i class="fa-solid fa-book-open-reader fa-2xl"></i>Education</button>
+                <button class="bg__btn-lg"><i class="fa-solid fa-heart-pulse fa-2xl"></i>Health Sciences</button>
+                <button class="bg__btn-lg"><i class="fa-solid fa-user-nurse fa-2xl"></i></i>Nursing</button>
+                <button class="bg__btn-lg"><i class="fa-solid fa-brain fa-2xl"></i>Psychology and Counseling</button>
+                <button class="bg__btn-lg"><i class="fa-solid fa-file-invoice fa-2xl"></i>Public Policy and Administration</button>
+                <button class="bg__btn-lg"><i class="fa-solid fa-file-invoice fa-2xl"></i>Social Work and Human Services</button>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <span class="content__recently-viewed">
+            Recently Viewed
+        </span>
+        <div class="content__card-wrapper">
+            <div class="content__card content__card--active">
+                <span class="content__heading">
+                    Masters of Business Administration (MBA)
+                </span>
+                <span class="content__weeks">
+                    52 weeks
+                </span>
+            </div>
+            <div class="content__card">
+                <span class="content__heading">
+                    Master of Public Administration (MPA)
+                </span>
+                <span class="content__weeks">
+                    52 weeks
+                </span>  
+            </div>
+            <div class="content__card">
+                <span class="content__heading">
+                    MS in Education
+                </span>
+                <span class="content__weeks">
+                    52 weeks
+                </span>
+            </div>
+        </div>
+        <span class="content__programs-found">
+            <i class="fa-solid fa-graduation-cap fa-active"></i> 261 Programs Found
+        </span>
+       
+        <div class="accordion">
+            <div class="accordion__accordion-item">
+                <div class="accordion__accordion-title"> 
+                    <button class="accordion__button">Featured</button>
+                    <span class="MS-in-Education">
+                        BS in Information Technology
+                    </span>
+                    <button class="accordion__btn">Learn more</button>
+                </div>
+                <div class="accordion__accordion-content">
+                    <p class="accordion__accordion-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco...</p>
+                    <div class="accordion__footer">
+                        <span class="accordion__course-length">
+                            Course Length
+                          </span>
+                          <span class="accordion__weeks">
+                            52 weeks
+                          </span>
+                          <span class="accordion__next-start-date">
+                            Next Start Date
+                          </span>
+                          <span class="accordion__date">
+                            29/02/2016
+                          </span>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="accordion__accordion-item">
+                <div class="accordion__accordion-title"> 
+                    <button class="accordion__button">Featured</button>
+                    <span class="MS-in-Education">
+                        Masters of Business Administration (MBA)
+                    </span>
+                    <button class="accordion__btn">Learn more</button>
+                </div>
+                <div class="accordion__accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco...</p>
+                </div>
+            </div>
+          
+            <div class="accordion__accordion-item">
+                <div class="accordion__accordion-title"> 
+                    <button class="accordion__button">Featured</button>
+                    <span class="MS-in-Education">
+                        MS in Education
+                    </span>
+                    <button class="accordion__btn">Learn more</button>
+                </div>
+                <div class="accordion__accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco...</p>
+                </div>
+            </div>
+          
+            <div class="accordion__accordion-item">
+                <div class="accordion__accordion-title"> 
+                    <button class="accordion__button">Featured</button>
+                    <span class="MS-in-Education">
+                        Ph.D. in Nursing
+                    </span>
+                    <button class="accordion__btn">Learn more</button>
+                </div>
+                <div class="accordion__accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco...</p>
+                </div>
+            </div>
+          
+            <div class="accordion__accordion-item">
+                <div class="accordion__accordion-title"> 
+                    <span class="MS-in-Education">
+                        BS in Accounting
+                    </span>
+                    <button class="accordion__btn">Learn more</button>
+                </div>
+                <div class="accordion__accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco...</p>
+                </div>
+            </div>
+
+            <div class="accordion__accordion-item">
+                <div class="accordion__accordion-title"> 
+                    <span class="MS-in-Education">
+                        BS in Business Administration
+                    </span>
+                    <button class="accordion__btn">Learn more</button>
+                </div>
+                <div class="accordion__accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco...</p>
+                </div>
+            </div>
+
+            <div class="accordion__accordion-item">
+                <div class="accordion__accordion-title"> 
+                    <span class="MS-in-Education">
+                        BS in Business Communication
+                    </span>
+                    <button class="accordion__btn">Learn more</button>
+                </div>
+                <div class="accordion__accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco...</p>
+                </div>
+            </div>
+
+            <div class="accordion__accordion-item">
+                <div class="accordion__accordion-title"> 
+                    <span class="MS-in-Education">
+                        BS in Communication
+                    </span>
+                    <button class="accordion__btn">Learn more</button>
+                </div>
+                <div class="accordion__accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco...</p>
+                </div>
+            </div>
+
+            <div class="accordion__accordion-item">
+                <div class="accordion__accordion-title"> 
+                    <span class="MS-in-Education">
+                        BS in Computer Information Systems
+                    </span>
+                    <button class="accordion__btn">Learn more</button>
+                </div>
+                <div class="accordion__accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco...</p>
+                </div>
+            </div>
+
+            <div class="accordion__accordion-item">
+                <div class="accordion__accordion-title"> 
+                    <span class="MS-in-Education">
+                        BS in Healthcare Management
+                    </span>
+                    <button class="accordion__btn">Learn more</button>
+                </div>
+                <div class="accordion__accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco...</p>
+                </div>
+            </div>
+    </div>
+    <div class="pagination">
+        <a class="pagination__a pagination__a--deactive" href="#"> &larr;</a>
+        <a class="pagination__a pagination__a--active" href="#">1</a>
+        <a class="pagination__a" href="#">2</a>
+        <a class="pagination__a" href="#">3</a>
+        <a class="pagination__a" href="#">4</a>
+        <a class="pagination__a pagination__a--none" href="#">...</a>
+        <a class="pagination__a" href="#">27</a>
+        <a class="pagination__a" href="#"> &rarr;</a>
+    </div>
+    </div>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>
